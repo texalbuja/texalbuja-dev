@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { PageLayout, NavList, Heading, Header, Avatar } from "@primer/react";
+import { PageLayout, NavList, Header } from "@primer/react";
 import logo from "../assets/logo.svg";
 
 interface LayoutProps {
