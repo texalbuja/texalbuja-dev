@@ -6,7 +6,7 @@ import "@primer/primitives/dist/css/functional/themes/light.css";
 import { BaseStyles, ThemeProvider } from "@primer/react";
 
 createRoot(document.getElementById("root")!).render(
-  <ThemeProvider>
+  <ThemeProvider colorMode="auto">
     <BaseStyles>
       <App />
     </BaseStyles>

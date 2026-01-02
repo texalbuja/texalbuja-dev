@@ -22,6 +22,7 @@ This is a single-page React application built with Vite, TypeScript, and GitHub 
 - Import UI components from `@primer/react`
 - Follow React hooks best practices
 - Use Primer's design tokens for consistent theming
+- Only add comments when necessary for clarity, prefer self-documenting code
 
 Example component usage:
 ```tsx
