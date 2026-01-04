@@ -69,6 +69,24 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               AWS Academy
             </NavList.Item>
             <NavList.Item
+              href="#labs"
+              aria-current={currentRoute === "#labs" ? "page" : undefined}
+            >
+              Labs
+              <NavList>
+                <NavList.Item
+                  href="#labs/how-to-install-terraform"
+                  aria-current={
+                    currentRoute === "#labs/how-to-install-terraform"
+                      ? "page"
+                      : undefined
+                  }
+                >
+                  How to Install Terraform
+                </NavList.Item>
+              </NavList>
+            </NavList.Item>
+            <NavList.Item
               href="#about-me"
               aria-current={currentRoute === "#about-me" ? "page" : undefined}
             >
