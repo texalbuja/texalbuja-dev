@@ -1,27 +1,11 @@
 import React from 'react';
 import { ShareIcon, MarkGithubIcon } from '@primer/octicons-react';
 import { CodeBlock } from '../../components/CodeBlock';
+import headshot from "../../assets/tex-headshot.jpeg";
 
 const BlogEntry: React.FC = () => {
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '16px' }}>
-      {/* Banner */}
-      <div
-        style={{
-          height: '300px',
-          backgroundColor: '#f6f8fa',
-          backgroundImage: 'url(https://via.placeholder.com/800x300?text=Terraform+Setup)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          borderRadius: '8px',
-          marginBottom: '16px',
-        }}
-      >
-        <span style={{ color: 'white', fontSize: '20px', fontWeight: 'bold' }}>Infrastructure as Code</span>
-      </div>
 
       {/* Title */}
       <h1 style={{ fontSize: '36px', marginBottom: '12px' }}>
@@ -31,11 +15,11 @@ const BlogEntry: React.FC = () => {
       {/* Author's Photo and Name */}
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
         <img
-          src="https://github.com/octocat.png" // Replace with actual author's photo URL
+          src={headshot} // Replace with actual author's photo URL
           style={{ width: '60px', height: '60px', borderRadius: '50%', marginRight: '12px' }}
           alt="Author's Photo"
         />
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
           <span style={{ fontSize: '16px', fontWeight: 'bold' }}>Tex Albuja</span>
           <span style={{ color: '#586069' }}>DevOps Engineer</span>
         </div>

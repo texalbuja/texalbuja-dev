@@ -51,22 +51,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </Header.Item>
         </Header>
       </PageLayout.Header>
-      <PageLayout.Pane position="start" width="large">
-        <div style={{ padding: "1rem" }}>
+      <PageLayout.Pane position="start" divider="line" sticky style={{paddingLeft: "6rem", paddingRight: "6rem"}}>
           <NavList>
             <NavList.Item
               href="#tld"
               aria-current={currentRoute === "#tld" ? "page" : undefined}
             >
               Technical Leadership
-            </NavList.Item>
-            <NavList.Item
-              href="#aws-academy"
-              aria-current={
-                currentRoute === "#aws-academy" ? "page" : undefined
-              }
-            >
-              AWS Academy
             </NavList.Item>
             <NavList.Item
               href="#labs"
@@ -93,7 +84,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               About Me
             </NavList.Item>
           </NavList>
-        </div>
       </PageLayout.Pane>
       <PageLayout.Content>{children}</PageLayout.Content>
     </PageLayout>
